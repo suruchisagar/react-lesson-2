@@ -27,7 +27,7 @@ Examples:
 
 ---
 
-## 🎯 Syntax
+##  Syntax
 
 ```js
 const [stateVariable, setStateFunction] = useState(initialValue);
@@ -40,7 +40,7 @@ const [stateVariable, setStateFunction] = useState(initialValue);
 
 ---
 
-## ⭐ Basic Example (Counter)
+##  Basic Example (Counter)
 
 ```js
 const [count, setCount] = useState(0);
@@ -53,15 +53,15 @@ const [count, setCount] = useState(0);
 
 ---
 
-## 🧠 Key Facts (Interview Focus)
+##  Key Facts (Interview Focus)
 
-### 1️⃣ Updating state re-renders the component
+### 1️. Updating state re-renders the component
 
 ```js
 setCount(count + 1);
 ```
 
-### 2️⃣ State updates are **asynchronous**
+### 2️. State updates are **asynchronous**
 
 ```js
 console.log(count); // old value
@@ -71,7 +71,7 @@ console.log(count); // still old value
 
 ---
 
-# 🟩 useEffect Hook
+#  useEffect Hook
 
 `useEffect` is a React Hook that lets you perform **side effects** in functional components.
 
@@ -89,7 +89,7 @@ Before hooks, this was done using:
 
 ---
 
-## 🧠 Syntax
+##  Syntax
 
 ```js
 useEffect(() => {
@@ -99,9 +99,9 @@ useEffect(() => {
 
 ---
 
-# 🎯 useEffect Behaviors (Based on Dependency Array)
+#  useEffect Behaviors (Based on Dependency Array)
 
-## 1️⃣ Runs ONCE (on mount)
+## 1️. Runs ONCE (on mount)
 
 Like `componentDidMount`
 
@@ -116,7 +116,7 @@ useEffect(() => {
 
 ---
 
-## 2️⃣ Runs when a dependency CHANGES
+## 2️. Runs when a dependency CHANGES
 
 Like `componentDidUpdate`
 
@@ -130,7 +130,7 @@ useEffect(() => {
 
 ---
 
-## 3️⃣ Runs on EVERY render
+## 3️. Runs on EVERY render
 
 (No dependency array)
 
@@ -156,5 +156,3 @@ To control **when** the effect should run:
 | *no array*      | Runs on every render |
 
 ---
-
-# ✅ End of Notes
